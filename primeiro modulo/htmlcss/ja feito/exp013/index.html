@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imagens/WhatsApp Image 2022-12-28 at 13.46.47.jpeg" type="image/x-icon">
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+    </style>
+    <title>midias em HTML5</title>
+</head>
+<body>
+
+    <h1>imagem dinamica</h1>
+    <p>teste abrir esse site em varios dispositivos diferentes ou simplesmente aumente e dimiua o tamanho do seu navegador</p>
+
+
+    <picture><!--"picture" serve apra informar que vamos trabalhar com "PX"-->
+        <source media="(max-width: 900px)" srcset="C:\Users\Diulye\Desktop\junior\estudos\imagem\binzipequena2.jpeg" type="image/">
+        <img src="../../imagem/binzi.jpeg" alt="imagem flexivel">
+        <!--formato da imagem recomendado png, usando "max-width" vai dar o tamanho maximo da pag,"1000px" usa para pc, o "srcset" serve para dar a imagem que vai vir quando o cliente diminuir a pag, isso tudo o codigo "source media"-->
+    </picture> 
+
+    <h1>vamos por audio</h1>
+<audio src="midia/audio.mp3" controls loop></audio>
+<!--essa tem que aparecer o cotrole para play no audio, tem que colocar o comando "controls"-->
+<!--o codigo loop serve para começar denovo-->
+<!--mp3 wav OGG-->
+<!--nao usar wav-->
+<audio preload="metadata" autoplay >
+    <source src="midia/audio.mp3" type="audio/mpeg">
+    <!--para por mais "source" pagamos o "src" do auido e colocamos o "source src" colocamos o audio no "src" e no "type" procuramos o tipo conforme o audio. usando mp3 o "type" é "MPEG"-->
+</audio>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

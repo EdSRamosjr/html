@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* 
+quando colocamos uma "id" em html, usamos no css "#" para chamar a identificaçao.
+em html é "id" = em css é "#"(so pode ter um)
+
+quando colocamos uma "class" em html, usamos no css "." para chamar a identificaçao.
+em html é "class" = em css é "."(serve para marcar varios codigos)
+
+*/
+body{ background-color: rgb(6, 231, 119);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h1{
+    color: brown;
+}
+
+#principal{
+    text-align: center;
+}
+.basico{
+color: aliceblue;
+}
+.intermediario{
+color: antiquewhite;
+}
+.avançado{
+color: aqua;
+}
+h2{
+    color: blueviolet;
+}

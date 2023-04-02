@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkred;
+    margin: 0px;
+}
+header{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 0px;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.418);
+}
+nav{
+    background-color: rgb(70, 66, 66);
+    padding: 3px;
+    box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.473);
+    /*sempre que for colocar sombra diminuir a opacudade.
+    tenho que aprender a usar o web developer.*/
+
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px 12px 24px 48px;
+    /*a orde é sempre em sentido horario, entao o "6px" esquerda de cima, "12px" direita de cima, "24px" direita de baixo e "48px" esquerda baixo */
+}
+article{
+    background-color: antiquewhite;
+}
+article > aside{
+    background-color: cornsilk;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin: 0px;
+}
+footer > p{
+    margin: 4px;
+}
+#bola{
+    
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+/*bodas com imagens
+>nao é muito recomendado.<
+tem que criar uma borda usando "border" depois usando "border-image-source:url()"
+"border-image-slice" fatiamento.
+"border-image-repeat:repat;"ou stretch(vai ficar com linhas)
+botando so o "border-image"
+é so seguir a ordem e colocar os valores.
+para por a borda de imagem so vai funcionar se tiver uma borda solida, se nao, nao vai!
+nao vale muito!
+*/

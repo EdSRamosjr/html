@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* @import url(); --> para importar fonte do google fonts.
+  para colocar um fonte baixada usamos "@font-face", dentro da "url" colocamos o caminho e o nome do arquivo de fonte.
+  formatos()
+  - opentype(otf)--> funciona em quase todos
+  - truetype(ttf)--> funciona em quase todos
+  - embedded-opentype
+  - truetype-aat(apple advanced typography)
+  - svg
+pegar font no google usando extençao font-ninja
+webdeveloper- para ligar e desligar java, css.
+sites para pegar fontes de imagens
+whatfontis.com
+fontskill
+myfonts.com
+tipo de alinhamento de texto
+
+*/
+
+@font-face {
+    font-family: 'Love' ;
+    src: url(love larry.otf) format(opentype);
+    
+}
+
+*{
+  /*     shorthand
+    ordem de configuraçao.
+    font-style->font-weigth->font-size->font-family*/
+    font: bolder 1em 'work sans', 'sand-serif' ;
+}
+body{
+    background-image: linear-gradient(to right,#D9C1C3,#E5CDCB,#7B6568);
+    text-align: justify;
+
+}
+main{
+    background-color: white;
+    border-radius: 10px ;
+    box-shadow: 5px 5px 15px #3128309f  ;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: right;
+}
+p{
+    text-indent: 20px;
+}
+/*
+medidas absolutas
+cm, mm, in, px.
+
+medidas relativas
+em, ex, rem, vw(viwport), vh, %.
+16px geralmente é 1em 
+configuraçao para ser usada é px e em, sendo que "em" sendo a melhor.
+
+weight->peso (lighter, normal, bold, bolder). tambem podemos usar numeros de 100 a 900. lembrando que todas essas opçoes nem todas as fontes vao ter!
+
+width->largura
+
+height->autura
+*/

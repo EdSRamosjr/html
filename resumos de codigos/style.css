@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/*
+medidas absolutas
+cm, mm, in, px.
+
+medidas relativas
+em, ex, rem, vw(viwport), vh, %.
+16px geralmente é 1em 
+configuraçao para ser usada é px e em, sendo que "em" sendo a melhor.
+
+weight->peso (lighter, normal, bold, bolder). tambem podemos usar numeros de 100 a 900. lembrando que todas essas opçoes nem todas as fontes vao ter!
+
+width->largura
+
+height->autura
+*/
+ /*     shorthand
+    ordem de configuraçao.
+    font-style->font-weigth->font-size->font-family*/
+    /* @import url(); --> para importar fonte do google fonts.
+  para colocar um fonte baixada usamos "@font-face", dentro da "url" colocamos o caminho e o nome do arquivo de fonte.
+  formatos()
+  - opentype(otf)--> funciona em quase todos
+  - truetype(ttf)--> funciona em quase todos
+  - embedded-opentype
+  - truetype-aat(apple advanced typography)
+  - svg
+pegar font no google usando extençao font-ninja
+webdeveloper- para ligar e desligar java, css.
+sites para pegar fontes de imagens
+whatfontis.com
+fontskill
+myfonts.com
+tipo de alinhamento de texto
+
+*/
+
+body {
+    background-color: aqua;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 10px;
+}
+a{
+    padding: 5px;
+    margin-right: 30px;
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+a:visited{
+    color: blue;
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+h1{
+color: chocolate;
+
+background-color: aliceblue;
+
+height: 300px;
+width: 300px;
+padding: 30px;
+border-width: 10px;
+border-style: solid;
+border-color: darkgrey;
+}
+h2{
+ color: blue;
+}
+p{
+text-align: justify;
+}
+a::before{
+        color: rgb(90, 139, 0);
+}
+a::after{
+    text-decoration: none;
+    font-weight: normal;
+    color: darkgrey;
+}
+main{
+    background-color: white;
+    border-radius: 10px ;
+    box-shadow: 5px 5px 15px #3128309f  ;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+.box{
+    display: inline-block;
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+}
+.box:hover{
+    background-color: crimson;
+}
+
+/* 
+quando colocamos uma "id" em html, usamos no css "#" para chamar a identificaçao.
+em html é "id" = em css é "#"(so pode ter um)
+
+quando colocamos uma "class" em html, usamos no css "." para chamar a identificaçao.
+em html é "class" = em css é "."(serve para marcar varios codigos)
+
+*/
+
+#principal{
+    text-align: center;
+}
+.basico{
+color: aliceblue;
+}
+.intermediario{
+color: antiquewhite;
+}
+.avançado{
+color: aqua;
+}
