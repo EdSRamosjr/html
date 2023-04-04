@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela certa</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead{
+            background-color: gray;
+        }
+        tfoot{
+            background-color: gray;
+        }
+        .num{
+            text-align: right;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>uso de tabelas grandes</h1>
+    <!--
+        anatomia da tabela
+
+        cabeça
+        tr,td,th
+
+        corpo
+        tr,td,th
+
+        pe
+        tr,td,th
+
+    -->
+
+
+    <table>
+        <thead>
+            <th>estado</th>
+            <th>populaçao</th>
+        </thead>
+        <tbody>
+
+            <tr>
+            <td>sao paulo</td>
+            <td class="num">45 919 049</td>
+        </tr>
+        <tr>
+            <td>rio de janeiro</td>
+            <td class="num">17 264 943</td>
+        </tr>
+        <tr>
+            <td>minas gerais</td>
+            <td class="num">2342315325</td>
+        </tr>
+        <tr>
+            <td>rio grande do sul</td>
+            <td class="num">6541268040</td>
+
+        </tr>
+
+        </tbody>
+
+        <tfoot>
+
+            <th>total de habitantes</th>
+            <td class="num">886546510516</td>
+
+        </tfoot>
+    </table>
+    
+</body>
+</html>
