@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
     <meta charset="UTF-8">
@@ -7,34 +8,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabela certa</title>
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        table{
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        table {
             width: 500px;
             border-collapse: collapse;
         }
-        td, th{
+
+        td,
+        th {
             border: 1px solid black;
             padding: 10px;
         }
-        thead{
+
+        thead {
             background-color: gray;
         }
-        tfoot{
+
+        tfoot {
             background-color: gray;
         }
-        .num{
+
+        .num {
             text-align: right;
         }
     </style>
 
 </head>
+
 <body>
 
     <h1>uso de tabelas grandes</h1>
     <!--
         anatomia da tabela
+        capition -- > legenda da tabela
 
         cabeça
         tr,td,th
@@ -45,43 +60,119 @@
         pe
         tr,td,th
 
+        th é o titulo da coluna da tabela
+        td é o dado da coluna da tabela
+
+        "scope" é para definir para o codigo o titulo da coluna, "col" para to topo e "row" para o pe.
+
     -->
 
 
     <table>
+        <caption>
+            populaçao das unidades federativas
+        </caption>
         <thead>
-            <th>estado</th>
-            <th>populaçao</th>
+            <th scope="col">estado</th>
+            <th scope="col">populaçao</th>
         </thead>
         <tbody>
 
             <tr>
-            <td>sao paulo</td>
-            <td class="num">45 919 049</td>
-        </tr>
-        <tr>
-            <td>rio de janeiro</td>
-            <td class="num">17 264 943</td>
-        </tr>
-        <tr>
-            <td>minas gerais</td>
-            <td class="num">2342315325</td>
-        </tr>
-        <tr>
-            <td>rio grande do sul</td>
-            <td class="num">6541268040</td>
+                <td>sao paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
 
-        </tr>
+            <tr>
+                <td>rio de janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td>minas gerais</td>
+                <td class="num">2342315325</td>
+            </tr>
+
+            <tr>
+                <td>rio grande do sul</td>
+                <td class="num">6541268040</td>
+            </tr>
+
+            <tr>
+                <td>rio grande do sul</td>
+                <td class="num">6541268040</td>
+            </tr>
+
+            <tr>
+                <td>rio grande do sul</td>
+                <td class="num">6541268040</td>
+            </tr>
+
+            <tr>
+                <td>rio grande do sul</td>
+                <td class="num">6541268040</td>
+            </tr>
+
+            <tr>
+                <td>rio grande do sul</td>
+                <td class="num">6541268040</td>
+            </tr>
+
+            <tr>
+                <td>sao paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>rio de janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td>minas gerais</td>
+                <td class="num">2342315325</td>
+            </tr>
+
+            <tr>
+                <td>sao paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>rio de janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td>minas gerais</td>
+                <td class="num">2342315325</td>
+            </tr>
+
+            <tr>
+                <td>sao paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>rio de janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td>minas gerais</td>
+                <td class="num">2342315325</td>
+            </tr>
 
         </tbody>
 
         <tfoot>
 
-            <th>total de habitantes</th>
+            <th scope="row">total de habitantes</th>
             <td class="num">886546510516</td>
 
         </tfoot>
     </table>
-    
+
 </body>
+
 </html>
