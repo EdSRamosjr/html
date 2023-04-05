@@ -19,38 +19,55 @@ h1{
     color: var(--cor5);
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.466);
     font-size: 8vh;
+    font-family: 'Courier New', Courier, monospace;
 }
 header p{
+    font-family: 'Courier New', Courier, monospace;
     font-size: 3vh;
 }
 
 nav{   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: #994200;
     padding-left: 3px;
-    font-size: 2vh;
     text-decoration: none;
     font-weight: bold;
     transition-duration: .5s;
 }
+
 a{
+    font-size: 25px;
     padding: 5px;
     text-decoration: none;
     color: white;
 }
+
 a:hover{
-    text-decoration: underline;
+    
+    background-color: var(--cor1);
     text-shadow: 1px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: all 2s;
 }
+
 main{
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    background-image: url(../imagem/fundocinza.jpg);
 }
+
 img{ 
     width: 45vh;
     display: block;
     margin: auto;
 }
+
+.img{
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+    
+}
+
 main p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 10px;
@@ -60,6 +77,7 @@ main p{
     font-size: 2.5vh;
     line-height: 2em;
 }
+
 article{
     background-color: rgba(255, 255, 255, 0.616);
     max-width: 1100px;
@@ -67,34 +85,63 @@ article{
     border-radius: 10px;
     margin: auto;
 }
+
 h2{
+    font-family: cursive;
+    font-weight: bolder;
     text-align: center;
     border-radius: 10px 10px 0px 0px;
     background-image: linear-gradient(to left, var(--cor3), var(--cor5));
 }
+
 h3{
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
+    background-color: #994200;
+    font-size: 3vh;
 }
-div{
+
+div.anuncio{
     
     padding: 20px;
-    padding-bottom: 100%;
+    padding-bottom: 50%;
     position: relative;
-    background-color: black;
+    background-image: url(../imagem/estrada.jpg);
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.466);
+    background-attachment: fixed;
 }
+
 div > img{
     position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
+    left: 35%;
+    
+}
+
+p.esquerda{
+   
+    border-radius: 10px;
+    margin: auto;
+    background-color: lightgray;
+    max-width: 600px;
+    box-shadow: 1px 1px 10px black;
+}
+
+p.direita{
+    
+    
+    border-radius: 10px;
+    margin: auto;
+    background-color: lightgray;
+    max-width: 600px;
+    box-shadow: 1px 1px 10px black;
+
 }
 
 footer{
     background-color: black;
     color: white;
     text-align: center;
-    
+
 }
