@@ -46,11 +46,18 @@ a:hover{
 main{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
 }
+img{ 
+    width: 45vh;
+    display: block;
+    margin: auto;
+}
 main p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
     margin: 15px 0px;
     text-align: justify;
     text-indent: 30px;
-    font-size: 1em;
+    font-size: 2.5vh;
     line-height: 2em;
 }
 article{
@@ -70,6 +77,24 @@ h3{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+div{
+    
+    padding: 20px;
+    padding-bottom: 100%;
+    position: relative;
+    background-color: black;
+}
+div > img{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
 footer{
-    background-color: var(--cor5);
+    background-color: black;
+    color: white;
+    text-align: center;
+    
 }
