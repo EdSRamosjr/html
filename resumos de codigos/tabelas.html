@@ -1,61 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tabela certa</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        caption{
-            font-size: 1.5em;
-            font-weight: bold;
-            padding: 10px;
-            background-color: lightgray;
-        }
-
-        table.certa {
-            width: 500px;
-            border-collapse: collapse;
-            position: relative;
-        }
-
-
-        td,
-        th {
-            border: 1px solid black;
-            padding: 10px;
-        }
-
-        thead {
-            background-color: rgb(44, 44, 44);
-        }
-        thead > tr > th{
-            position: sticky;
-            top: -1px;
-            background-color: rgb(44, 44, 44);
-        }
-
-        tfoot {
-            background-color: gray;
-        }
-
-        .num {
-            text-align: right;
-        }
-        tbody > tr:nth-child(odd){
-        background-color: Gray;
-}
-    </style>
-
+    <title>tabela</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!--
+        hierarquia de tabelas (simples)
+        table = tabela
+        table row = linha de tabela
+        table header = cabeçalho de tabela
+        table data = dado da tabela
+    -->
 
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>            
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+    
     <h1>uso de tabelas grandes</h1>
     <!--
         anatomia da tabela
@@ -182,7 +165,32 @@
 
         </tfoot>
     </table>
-
+    <h1>mescando celulas</h1>
+    <table>
+        <tr>
+            <td>a</td>
+            <td colspan="2">b</td>
+            
+        </tr>
+        <tr>
+            <td rowspan="3">d</td>
+            <td>e</td>
+            <td >f</td>
+        </tr>
+        <tr>
+            
+            <td>h</td>
+            <td>i</td>
+        </tr>
+        <tr>
+            
+            <td>m</td>
+            <td>n</td>
+        </tr>
+        <tr>
+            <td colspan="3">o</td>
+            
+        </tr>
+    </table>
 </body>
-
 </html>

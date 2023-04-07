@@ -14,10 +14,10 @@ width->largura
 
 height->autura
 */
- /*     shorthand
+/*     shorthand
     ordem de configuraçao.
     font-style->font-weigth->font-size->font-family*/
-    /* @import url(); --> para importar fonte do google fonts.
+/* @import url(); --> para importar fonte do google fonts.
   para colocar um fonte baixada usamos "@font-face", dentro da "url" colocamos o caminho e o nome do arquivo de fonte.
   formatos()
   - opentype(otf)--> funciona em quase todos
@@ -37,10 +37,11 @@ tipo de alinhamento de texto
 
 body {
     background-color: aqua;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
 }
-a{
+
+a {
     padding: 5px;
     margin-right: 30px;
     color: red;
@@ -48,48 +49,57 @@ a{
     font-weight: bold;
     background-color: antiquewhite;
 }
-a:visited{
+
+a:visited {
     color: blue;
 }
-a:hover{
+
+a:hover {
     color: black;
     text-decoration: underline;
 }
-h1{
-color: chocolate;
 
-background-color: aliceblue;
+h1 {
+    color: chocolate;
 
-height: 300px;
-width: 300px;
-padding: 30px;
-border-width: 10px;
-border-style: solid;
-border-color: darkgrey;
+    background-color: aliceblue;
+
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: darkgrey;
 }
-h2{
- color: blue;
+
+h2 {
+    color: blue;
 }
-p{
-text-align: justify;
+
+p {
+    text-align: justify;
 }
-a::before{
-        color: rgb(90, 139, 0);
+
+a::before {
+    color: rgb(90, 139, 0);
 }
-a::after{
+
+a::after {
     text-decoration: none;
     font-weight: normal;
     color: darkgrey;
 }
-main{
+
+main {
     background-color: white;
-    border-radius: 10px ;
-    box-shadow: 5px 5px 15px #3128309f  ;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #3128309f;
     width: 600px;
     padding: 10px;
     margin: auto;
 }
-.box{
+
+.box {
     display: inline-block;
     background-color: aqua;
     text-align: center;
@@ -97,28 +107,85 @@ main{
     height: 200px;
     width: 200px;
 }
-.box:hover{
+
+.box:hover {
     background-color: crimson;
 }
 
 /* 
-quando colocamos uma "id" em html, usamos no css "#" para chamar a identificaçao.
-em html é "id" = em css é "#"(so pode ter um)
+    quando colocamos uma "id" em html, usamos no css "#" para chamar a identificaçao.
+    em html é "id" = em css é "#"(so pode ter um)
 
-quando colocamos uma "class" em html, usamos no css "." para chamar a identificaçao.
-em html é "class" = em css é "."(serve para marcar varios codigos)
+    quando colocamos uma "class" em html, usamos no css "." para chamar a identificaçao.
+    em html é "class" = em css é "."(serve para marcar varios codigos)
 
+            
+    para configurar os espaços de um dado da tabela para o outro! so temdoistipos collapse que fica tudo junto. separete que separa. 
+        
 */
+ /*para configurar os espaços de um dado da tabela para o outro! so tem dois tipos collapse que fica tudo junto. separete que separa. */
 
-#principal{
+#principal {
     text-align: center;
 }
-.basico{
-color: aliceblue;
+
+.basico {
+    color: aliceblue;
 }
-.intermediario{
-color: antiquewhite;
+
+.intermediario {
+    color: antiquewhite;
 }
-.avançado{
-color: aqua;
+
+.avançado {
+    color: aqua;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+table.certa {
+    width: 500px;
+    border-collapse: collapse;
+    position: relative;
+}
+
+/*
+    td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;alinhamento horizontal, left esquerda, right direita, center meio.
+            vertical-align: bottom;alinhamento vertical, middle é meio, top é topo, bottom é embaixo.
+        } 
+*/
+td,
+th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+thead {
+    background-color: rgb(44, 44, 44);
+}
+
+thead>tr>th {
+    position: sticky;
+    top: -1px;
+    background-color: rgb(44, 44, 44);
+}
+
+tfoot {
+    background-color: gray;
+}
+
+.num {
+    text-align: right;
+}
+
+tbody>tr:nth-child(odd) {
+    background-color: Gray;
 }
