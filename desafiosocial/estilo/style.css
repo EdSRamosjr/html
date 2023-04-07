@@ -32,5 +32,12 @@ section#tlf{
     box-shadow: inset 10px 5px 10px rgba(0, 0, 0, 0.473);
 }
 section#rdsc{
-    
+
+}
+iframe#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
 }
