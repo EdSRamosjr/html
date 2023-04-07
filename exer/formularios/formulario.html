@@ -8,15 +8,20 @@
 </head>
 <body>
     <h1>formulario</h1>
-    <Form action="cadastro.php">
+    <Form action="cadastro.php" method="post">
     <!--
+
+        o  envio do formulario por padrao vai pela url que nao é uma forma boa de se passar informaçoes esse metodo é o "get" e podemos uras o "post" que manda interno sem auterar a url.
+        isso tudo usando "method"!
+
+
         pode por dentro do form "autocomplete=off".
 
         para enviar o formulario temos que por "action" e falar para onde ele vai.
 
         name = mais util para html e php.
         id =  mais util para javascript e label.
-        o label é uma tag do html para marcar o nome da caixa para a caixa.
+        o label é uma tag do html para marcar o nome da caixa para a caixa. 
         o label é para relacionar a caixa e nome da caixa.
     -->
         <P><label for="inome">nome:</label> 
