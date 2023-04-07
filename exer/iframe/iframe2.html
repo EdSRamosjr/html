@@ -18,12 +18,16 @@
     </style>
 </head>
 <body>
-    <h1>shfuidhs</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos modi atque eos doloremque repellat suscipit aliquid placeat ut! Minima blanditiis in consectetur accusantium earum assumenda esse, nostrum reprehenderit nobis nemo.</p>
+    <h1>
+        shfuidhs
+    </h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos modi atque eos doloremque repellat suscipit aliquid placeat ut! Minima blanditiis in consectetur accusantium earum assumenda esse, nostrum reprehenderit nobis nemo.
+    </p>
 
     <ul>
         <li>
-            <a href="C:\estudos\html\novodesafio\index.html" target="frame">
+            <a href="segurançaiframe.html" target="frame" >
                 priemira
             </a>
         </li>
@@ -43,11 +47,20 @@
 
 
     </ul>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat deserunt corrupti fugit nesciunt. Tempora aliquid, rerum dignissimos earum delectus nihil ut eveniet dolores consectetur esse officiis similique consequuntur reprehenderit.</p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat deserunt corrupti fugit nesciunt. Tempora aliquid, rerum dignissimos earum delectus nihil ut eveniet dolores consectetur esse officiis similique consequuntur reprehenderit.
+    </p>
 
-    <iframe frameborder="0" name="frame" srcdoc="<h1> testes</h1>"></iframe>
-    <!--colocando "srcdoc" consegimo usar as tags de html para coias simples-->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi commodi eligendi quidem eum distinctio! Similique, esse natus. Hic recusandae architecto ad voluptatum, veritatis ut dignissimos quis doloribus deserunt quibusdam. Eum?</p>
+    <iframe frameborder="0" name="frame" srcdoc="<h1> testes</h1>" sandbox="allow-forms allow-scripts" referrerpolicy="no-referer"></iframe>
+    <!--
+        colocando "srcdoc" consegimo usar as tags de html para coias simples
+        "sandbox="sandbox"" usamos para bloquear os outros sites de capturar dados
+        "referrerpolicy="no-referer"" vai bloaquear que busque dados para anuncio
+        sandbox pode usar os dois padroes acima para liberar certos recursos.
+    -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi commodi eligendi quidem eum distinctio! Similique, esse natus. Hic recusandae architecto ad voluptatum, veritatis ut dignissimos quis doloribus deserunt quibusdam. Eum?
+    </p>
     
 </body>
 </html>
