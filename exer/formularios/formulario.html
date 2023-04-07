@@ -13,6 +13,8 @@
 
         o  envio do formulario por padrao vai pela url que nao é uma forma boa de se passar informaçoes esse metodo é o "get" e podemos uras o "post" que manda interno sem auterar a url.
         isso tudo usando "method"!
+        o get so pode mandar 3 mil palavras
+        
 
 
         pode por dentro do form "autocomplete=off".
@@ -23,15 +25,45 @@
         id =  mais util para javascript e label.
         o label é uma tag do html para marcar o nome da caixa para a caixa. 
         o label é para relacionar a caixa e nome da caixa.
+
+
+
+
+        ------------------------------input---------------------------------------
+
+        dentro do input podemos da importancia para o campo usando o "required"
+
+        usando "minlength" temos o minimo de caracteres.dentro do input
+
+        usando "maxlength" temos o maximo de caracteres. dentro do input
+
+        size usamos para aumentar a caixa. dentro do input.
+
+        "placeholder=" serve para por uma ajuda no fundo caixa dentro do input.
+
+        usando o autocomplete="new-password" dentro do input pedimos uma senha nova.
+        
+        usando o autocomplete="current-password" para buscar senha dentro do nosso arquivo de senhas e usuarios!
+
+
+        ------------------Dentro do INPUT pode ter varios tipos---------
+
     -->
-        <P><label for="inome">nome:</label> 
+        <P>
+            <label for="inome">nome:</label> 
             <input type="text" name="nome" id="inome">
         </P>
-        <P><label for="isobrenome">sobrenome:</label>
+        <P>
+            <label for="isobrenome">sobrenome:</label>
              <input type="text" name="sobrenome" id="isobrenome">
-            </P>
+        </P>
+        <p>
+            <label for="idia">Dia da prova</label>
+            <input type="date" name="dia" id="idia">
+        </p>
         <p>
             <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </p>
     
     </Form>
